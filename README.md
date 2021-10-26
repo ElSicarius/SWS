@@ -1,0 +1,2 @@
+# SWS
+Slow Web Scanner
