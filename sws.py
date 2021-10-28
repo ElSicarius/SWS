@@ -6,7 +6,8 @@ from loguru import logger
 if __name__ == '__main__':
 
     arguments = get_parser()
-    session = Session(arguments.project_path)
+    session = Session(arguments)
+    session.load_session()
     arguments.func(arguments, session)
     session.save()
-    logger.warning(session)
+    logger.success(session)

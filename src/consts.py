@@ -1,6 +1,3 @@
 
 
-structure = {
-    "link": None,
-    "payload_index": 0,
-}
+csv_header = """URL,PATH,STATUS_CODE,CONTENT_LENGTH,TIME,METHOD\n"""
