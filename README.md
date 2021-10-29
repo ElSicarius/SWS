@@ -3,9 +3,9 @@ Slow Web Scanner, or in other words, a tool that helps you spread a wordlist acr
 
 # Why the F* ?
 Good question.
-First answer: do you know WAFs ?
-Second answer: you might want to stay undercover across a large number of assets
-third answer: Because, why not
+- First answer: do you know WAFs ?
+- Second answer: you might want to stay undercover across a large number of assets
+- Third answer: Because, why not
 
 # Basic usage
 
