@@ -20,8 +20,15 @@ https://google.fr
 ## command line
 
 ```bash
-python3.10 sws.py -p tests/test_project/ -w files/dirbuster-top1000.txt -l tests/hosts_tests --time 1 -of csv -o test --dump
+python3.10 sws.py -p tests/test_project/ -w files/dirbuster-top1000.txt -l tests/targets_tests --time 1 -of csv --dump
 ```
+- -p is your project path. You don't need to create the directory. In this directory will be placed all the output file of the program
+- -w is your wordlist
+- -l is your targets file
+- --time sets the waiting time between requests
+- -of = output format
+- --dump = dump all the responses to the corresponding filename
+
 ## Results
 
 Once finished, the project folder will look like this:
@@ -68,8 +75,6 @@ options:
                         Specify the path to a wordlist of webpaths
   -l NETWORK_PATH, --hosts NETWORK_PATH
                         Specify the path to a list of hosts/urls/ips to scan
-  -o OUT_FILE, --outFile OUT_FILE
-                        Specify the output file name
   -of OUT_FORMAT, --outFormat OUT_FORMAT
                         Specify format of the output (json,csv)
   -t THREADS, --threads THREADS
@@ -79,3 +84,9 @@ options:
 
 A scanner that runs against an entire network, but slowly and undercover (hopefully).
 ```
+
+# Todo
+
+- Format session messages
+- Add json output
+- filter output requests, do not output everything

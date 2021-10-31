@@ -42,6 +42,7 @@ class Session(object):
 
     def save(self) -> None:
         """
+        Save the session.json file while we're processing the targets
         """
         self.write_session(os.path.join(self.project_path,"session.json"))
 

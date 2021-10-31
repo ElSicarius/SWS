@@ -15,6 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def threading_http(httpsession, urls, payload: dict=None, method: str="GET") -> tuple:
     """
+    This function is used to thread the requests made to the targets
     """
     futures = set()
     match method:
